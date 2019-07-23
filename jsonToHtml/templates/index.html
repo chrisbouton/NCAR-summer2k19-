@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+    <body style="background-color:rgb(210, 216, 205)"></body>
+    <h1>DSM Status. TimeStamp: {{ status["timeStamp"] }}</h1>
+    <table>
+        <thead>
+        <tr>
+            <td><th colspan="1"></th><strong>ChronyC Status:</strong>
+            
+                {% if status["stratumAndTimeDiffCheck"] %}
+                <p style="color:green"> {{ status["stratumAndTimeDiffCheck"] }} </p>
+                {% else %}
+                <p style="color:red"> {{ status["stratumAndTimeDiffCheck"] }}</p> 
+                <p style="color:black">ChronyC tracking sumamry: </p><p style="color:red">{{ status["summary"] }}</p> 
+                {% endif %}
+
+            
+            </td>
+        </tr>
+         </thead>
+           
+        <tr>
+            <td><strong>File System and USB write Status:</strong>
+                {% if status["Status"] %}
+                <p style="color:green"> {{ status["Status"] }} </p>
+                {% else %}
+                <p style="color:red"> {{ status["Status"] }} </p>
+                <p style="color:black">checkUSB.py summary: </p>
+                <p style="color:red"> {{ status["usbSummary"] }}</p>
+                {% endif %}
+            
+            
+            
+            </td>
+        </tr>
+    </table>
+    
+</html>

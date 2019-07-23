@@ -1,0 +1,14 @@
+Reference ID    : 2FBE24E6 (io.crash-override.org)
+Stratum         : 3
+Ref time (UTC)  : Tue May 28 21:01:20 2019
+System time     : 0.000347377 seconds slow of NTP time
+Last offset     : -0.000452228 seconds
+RMS offset      : 0.000304778 seconds
+Frequency       : 4.094 ppm slow
+Residual freq   : -0.012 ppm
+Skew            : 0.167 ppm
+Root delay      : 0.059771717 seconds
+Root dispersion : 0.017839907 seconds
+Update interval : 257.7 seconds
+Leap status     : Normal
+
